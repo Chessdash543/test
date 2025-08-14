@@ -39,8 +39,8 @@ export default definePlugin({
                 sendBotMessage(ctx.channel.id, {
                     content: `
                         discord.gg/${invite.code} ·
-                        Expires: <t:${new Date(invite.expires_at).getTime() / 1000}:R> ·
-                        Max uses: \`${invite.max_uses}\`
+                        Expires: 0
+                        Max uses: null
                     `.trim().replace(/\s+/g, " ")
                 });
             }
